@@ -1,0 +1,9 @@
+alias: Send notification when martijn leaves home
+trigger:
+  platform: state
+  entity_id: device_tracker.iphone5s02
+  from: 'home'
+  to: 'not_home'
+action:
+  service: ifttt.trigger
+  data: {"event":"someone_left_home", "value1":"Martijn"}

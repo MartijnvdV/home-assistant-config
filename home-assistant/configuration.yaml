@@ -1,0 +1,59 @@
+homeassistant:
+  name: Klapper
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  elevation: !secret homeassistant_elevation
+  unit_system: imperial
+  temperature_unit: C
+  time_zone: Europe/Amsterdam
+
+# Enables the frontend
+frontend:
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Weather Prediction
+sensor:
+  platform: yr
+
+# Nest thermostat
+nest:
+  username: !secret nest_username
+  password: !secret nest_password
+
+climate:
+  platform: nest
+
+device_tracker:
+  platform: asuswrt
+  host: 192.168.2.1
+  protocol: ssh
+  mode: router
+  username: !secret asus_router_username
+  password: !secret asus_router_password
+  track_new_devices: no
+
+ifttt:
+  key: !secret ifttt_key
+
+zone: !include zones.yaml
+
+group: !include groups.yaml
+
+automation: !include_dir_list automation

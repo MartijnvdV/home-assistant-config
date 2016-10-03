@@ -1,0 +1,9 @@
+alias: Send notification when the last person leaves home
+trigger:
+  platform: state
+  entity_id: group.all_devices
+  from: 'home'
+  to: 'not_home'
+action:
+  service: ifttt.trigger
+  data: {"event":"someone_left_home", "value1":"Last person"}

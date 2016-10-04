@@ -3,13 +3,7 @@ Familie:
     - device_tracker.android4be461b69234839b
     - device_tracker.iphone5s02
 
-Rules:
-  entities:
-    - input_boolean.despcuarto
-    - input_select.alarma_cuarto
-    - input_boolean.luztarde
-
 Regels:
   view: yes
   icon: 'mdi:settings'
-  entities: group.rules
+  entities: group.familie

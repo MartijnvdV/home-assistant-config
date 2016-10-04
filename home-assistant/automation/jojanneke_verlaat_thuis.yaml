@@ -1,4 +1,4 @@
-alias: Send notification when the last person leaves home
+alias: Send notification when jojanneke leaves home
 trigger:
   platform: state
   entity_id: device_tracker.android4be461b69234839b

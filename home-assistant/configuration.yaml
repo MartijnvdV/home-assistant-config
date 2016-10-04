@@ -3,8 +3,8 @@ homeassistant:
   latitude: !secret homeassistant_latitude
   longitude: !secret homeassistant_longitude
   elevation: !secret homeassistant_elevation
-  unit_system: imperial
   temperature_unit: C
+  unit_system: metric
   time_zone: Europe/Amsterdam
 
 # Enables the frontend

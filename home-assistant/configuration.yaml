@@ -40,14 +40,7 @@ nest:
 climate:
   platform: nest
 
-device_tracker:
-  platform: asuswrt
-  host: 192.168.2.1
-  protocol: ssh
-  mode: router
-  username: !secret asus_router_username
-  password: !secret asus_router_password
-  track_new_devices: no
+device_tracker: !include device_tracker.yaml
 
 ifttt:
   key: !secret ifttt_key

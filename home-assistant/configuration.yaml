@@ -6,6 +6,7 @@ homeassistant:
   temperature_unit: C
   unit_system: metric
   time_zone: Europe/Amsterdam
+  customize: !include customize.yaml
 
 # Enables the frontend
 frontend:

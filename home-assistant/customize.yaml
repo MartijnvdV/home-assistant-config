@@ -1,0 +1,31 @@
+#weather
+sensor.yr_cloudiness:
+  friendly_name: 'Bewolkt'
+  icon: mdi:weather-cloudy
+sensor.yr_condition:
+  friendly_name: 'Weersomstandigheden'
+  icon: mdi:weather-partlycloudy
+sensor.yr_dewpoint_temperature:
+  friendly_name: 'Dauwpunt Temperatuur'
+  icon: mdi:thermometer-lines
+sensor.yr_fog:
+  friendly_name: 'Mist'
+  icon: mdi:weather-fog
+sensor.yr_humidity:
+  friendly_name: 'Luchtvochtiheid'
+  icon: mdi:water-percent
+sensor.yr_pressure:
+  friendly_name: 'Luchtdruk'
+  icon: mdi:weight
+sensor.yr_symbol:
+  friendly_name: 'Weer'
+  icon: mdi:weather-sunny
+sensor.yr_temperature:
+  friendly_name: 'Temperatuur'
+  icon: mdi:thermometer-lines
+sensor.yr_wind_direction:
+  friendly_name: 'Windrichting'
+  icon: mdi:weather-windy
+sensor.yr_wind_speed:
+  friendly_name: 'Windsnelheid'
+  icon: mdi:weather-windy

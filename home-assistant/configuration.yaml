@@ -28,9 +28,7 @@ logbook:
 # Track the sun
 sun:
 
-# Weather Prediction
-sensor:
-  platform: yr
+sensor: !include_dir_list sensors
 
 # Nest thermostat
 nest:

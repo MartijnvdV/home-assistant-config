@@ -1,8 +1,35 @@
 Familie:
-  view: no
   entities:
     - device_tracker.android4be461b69234839b
     - device_tracker.iphone5s02
+
+Woonkamer:
+  entities:
+    - light.achterlamp
+    - light.voorlamp
+
+Achtertuin:
+  entities:
+    - light.buitenlamp
+
+Nest:
+  entities:
+    - climate.woonkamer
+
+Weather:
+  entities:
+    - sensor.yr
+
+## VIEWS ##
+default_view:
+  name: Thuis
+  icon: mdi:home
+  view: yes
+  entities:
+    - group.woonkamer
+    - group.achtertuin
+    - group.nest
+    - group.weather
 
 Regels:
   view: yes

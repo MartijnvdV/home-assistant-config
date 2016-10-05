@@ -5,3 +5,4 @@
   username: !secret asus_router_username
   password: !secret asus_router_password
   track_new_devices: no
+  consider_home: 240

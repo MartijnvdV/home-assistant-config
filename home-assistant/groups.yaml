@@ -1,4 +1,5 @@
 Familie:
+  view: no
   entities:
     - device_tracker.android4be461b69234839b
     - device_tracker.iphone5s02

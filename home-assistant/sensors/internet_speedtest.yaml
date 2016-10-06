@@ -1,0 +1,10 @@
+# Testing download/upload/ping speed, every half hour of every day
+platform: speedtest
+server_id: 3587
+minute:
+  - 0
+  - 30
+monitored_conditions:
+  - ping
+  - download
+  - upload

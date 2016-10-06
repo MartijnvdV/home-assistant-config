@@ -1,4 +1,4 @@
-#weather
+# Weather
 sensor.yr_cloudiness:
   friendly_name: 'Bewolkt'
   icon: mdi:weather-cloudy
@@ -25,7 +25,24 @@ sensor.yr_temperature:
   icon: mdi:thermometer-lines
 sensor.yr_wind_direction:
   friendly_name: 'Windrichting'
-  icon: mdi:weather-windy
+  icon: mdi:ray-end-arrow
 sensor.yr_wind_speed:
   friendly_name: 'Windsnelheid'
   icon: mdi:weather-windy
+sensor.yr_low_clouds:
+  hidden: true
+sensor.yr_medium_clouds:
+  hidden: true
+sensor.yr_high_clouds:
+  hidden: true
+
+# Internet speed tests
+sensor.speedtest_ping:
+  friendly_name: Ping
+  icon: mdi:clock-fast
+sensor.speedtest_download:
+  friendly_name: Download
+  icon: mdi:download
+sensor.speedtest_upload:
+  friendly_name: Upload
+  icon: mdi:upload

@@ -16,6 +16,11 @@ Nest:
   entities:
     - climate.woonkamer
 
+Internetsnelheid:
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+
 Weather:
   entities:
     - sensor.yr_cloudiness
@@ -34,16 +39,16 @@ Weather:
 
 ## VIEWS ##
 default_view:
-  name: Thuis
-  icon: mdi:home
   view: yes
+  icon: mdi:home
   entities:
     - group.woonkamer
     - group.achtertuin
     - group.nest
     - group.weather
+    - group.familie
 
 Regels:
   view: yes
-  icon: 'mdi:settings'
-  entities: group.familie
+  icon: 'mdi:information'
+  entities: group.internetsnelheid

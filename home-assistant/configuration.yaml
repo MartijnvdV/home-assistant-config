@@ -8,6 +8,9 @@ homeassistant:
   time_zone: Europe/Amsterdam
   customize: !include customize.yaml
 
+http:
+  api_password: !secret http_password
+
 # Enables the frontend
 frontend:
 

@@ -1,16 +1,4 @@
 # Weather
-sensor.yr_cloudiness:
-  friendly_name: 'Bewolkt'
-  icon: mdi:weather-cloudy
-sensor.yr_condition:
-  friendly_name: 'Weersomstandigheden'
-  icon: mdi:weather-partlycloudy
-sensor.yr_dewpoint_temperature:
-  friendly_name: 'Dauwpunt Temperatuur'
-  icon: mdi:thermometer-lines
-sensor.yr_fog:
-  friendly_name: 'Mist'
-  icon: mdi:weather-fog
 sensor.yr_humidity:
   friendly_name: 'Luchtvochtiheid'
   icon: mdi:water-percent
@@ -35,6 +23,22 @@ sensor.yr_medium_clouds:
   hidden: true
 sensor.yr_high_clouds:
   hidden: true
+sensor.yr_cloudiness:
+  friendly_name: 'Bewolkt'
+  icon: mdi:weather-cloudy
+  hidden: true
+sensor.yr_condition:
+  friendly_name: 'Weersomstandigheden'
+  icon: mdi:weather-partlycloudy
+  hidden: true
+sensor.yr_dewpoint_temperature:
+  friendly_name: 'Dauwpunt Temperatuur'
+  icon: mdi:thermometer-lines
+  hidden: true
+sensor.yr_fog:
+  friendly_name: 'Mist'
+  icon: mdi:weather-fog
+  hidden: true
 
 # Internet speed tests
 sensor.speedtest_ping:
@@ -46,3 +50,9 @@ sensor.speedtest_download:
 sensor.speedtest_upload:
   friendly_name: Upload
   icon: mdi:upload
+
+
+# Climate
+climate.living_room:
+  friendly_name: "Woonkamer"
+  icon: mdi:thermometer-lines

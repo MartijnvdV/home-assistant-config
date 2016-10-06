@@ -14,7 +14,7 @@ Achtertuin:
 
 Nest:
   entities:
-    - climate.woonkamer
+    - climate.living_room
 
 Internetsnelheid:
     - sensor.speedtest_download

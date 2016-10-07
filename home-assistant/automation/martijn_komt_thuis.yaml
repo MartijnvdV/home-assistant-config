@@ -7,4 +7,3 @@ trigger:
 action:
   service: ifttt.trigger
   data: {"event":"someone_arrived_home", "value1":"Martijn"}
-

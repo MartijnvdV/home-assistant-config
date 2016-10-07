@@ -1,0 +1,17 @@
+alias: Send notification when the last person leaves home
+trigger:
+  platform: state
+  entity_id: group.all_devices
+  from: 'home'
+  to: 'not_home'
+condition:
+  condition: state
+  entity_id: sun.sun
+  state: 'above_horizon'
+action:
+  - service: climate.set_away_mode
+    entity_id: climate.living_room
+    data:
+      away_mode: 'True'
+  - service: ifttt.trigger
+    data: {"event":"thermostat_mode", "value1":"OFF"}

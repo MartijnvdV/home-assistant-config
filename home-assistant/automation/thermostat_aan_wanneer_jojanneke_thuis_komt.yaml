@@ -1,0 +1,17 @@
+alias: Send notification when jojanneke arrives at home
+trigger:
+  platform: state
+  entity_id: device_tracker.android4be461b69234839b
+  from: 'not_home'
+  to: 'home'
+condition:
+  condition: state
+  entity_id: sun.sun
+  state: 'above_horizon'
+action:
+  - service: climate.set_away_mode
+    entity_id: climate.living_room
+    data:
+      away_mode: 'False'
+  - service: ifttt.trigger
+    data: {"event":"thermostat_mode", "value1":"ON"}

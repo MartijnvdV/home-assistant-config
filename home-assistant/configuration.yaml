@@ -42,6 +42,15 @@ nest:
 climate:
   platform: nest
 
+#mqtt:
+#  broker: 192.168.2.151
+##  port: 1883
+#  port: 8883
+#  client_id: home-assistant
+#  keepalive: 60
+#  username: !secret mqtt_username
+#  password: !secret mqtt_password
+
 device_tracker: !include device_tracker.yaml
 
 ifttt:

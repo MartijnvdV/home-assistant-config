@@ -6,3 +6,5 @@
   password: !secret asus_router_password
   track_new_devices: no
   consider_home: 240
+#- platform: owntracks
+#  track_new_devices: yes

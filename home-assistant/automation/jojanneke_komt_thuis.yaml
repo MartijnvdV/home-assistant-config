@@ -1,7 +1,7 @@
 alias: Send notification when jojanneke arrives at home
 trigger:
   platform: state
-  entity_id: device_tracker.android4be461b69234839b
+  entity_id: device_tracker.pi_jojanneke
   from: 'not_home'
   to: 'home'
 action:

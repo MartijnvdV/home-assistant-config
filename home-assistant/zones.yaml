@@ -1,17 +1,24 @@
+# This will override the default home zone
+- name: Home
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  radius: 200
+  icon: mdi:home-variant
+
 - name: his_work
   latitude: !secret his_work_latitude
   longitude: !secret his_work_longitude
-  radius: 250
+  radius: 200
   icon: mdi:office
 
 - name: her_work
   latitude: !secret her_work_latitude
   longitude: !secret her_work_longitude
-  radius: 250
-  icon: mdi:office
+  radius: 200
+  icon: mdi:shopping
 
 - name: school
   latitude: !secret school_latitude
   longitude: !secret school_longitude
-  radius: 250
+  radius: 200
   icon: mdi:school

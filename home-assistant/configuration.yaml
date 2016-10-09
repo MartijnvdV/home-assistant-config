@@ -46,8 +46,9 @@ mqtt:
   broker: 127.0.0.1
   port: 8883
   client_id: home-assistant
-  keepalive: 60
-  certificate: /home/pi/generated_certificates/ca.crt
+#  client_key: /home/homeassistant/certs/hass.key
+#  client_cert: /home/homeassistant/certs/hass.crt
+  certificate: /home/homeassistant/certs/hass.crt
   username: !secret mqtt_username
   password: !secret mqtt_password
 

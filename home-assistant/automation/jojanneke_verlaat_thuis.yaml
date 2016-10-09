@@ -1,4 +1,5 @@
 alias: Send notification when jojanneke leaves home
+hide_entity: false
 trigger:
   platform: state
   entity_id: device_tracker.pi_jojanneke

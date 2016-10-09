@@ -1,13 +1,10 @@
 alias: Send notification when martijn arrives at home
+hide_entity: false
 trigger:
   platform: state
   entity_id: device_tracker.pi_martijn
   from: 'not_home'
   to: 'home'
-condition:
-  condition: state
-  entity_id: sun.sun
-  state: 'above_horizon'
 action:
   - service: climate.set_away_mode
     entity_id: climate.living_room

@@ -47,6 +47,7 @@ mqtt:
   port: 8883
   client_id: home-assistant
   keepalive: 60
+  certificate: /home/pi/generated_certificates/ca.crt
   username: !secret mqtt_username
   password: !secret mqtt_password
 

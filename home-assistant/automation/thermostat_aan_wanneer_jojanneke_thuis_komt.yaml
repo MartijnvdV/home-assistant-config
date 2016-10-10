@@ -1,5 +1,4 @@
-alias: Send notification when jojanneke arrives at home
-hide_entity: false
+alias: Thermostat on when jojanneke arrives home
 trigger:
   platform: state
   entity_id: device_tracker.pi_jojanneke

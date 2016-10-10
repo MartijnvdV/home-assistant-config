@@ -1,0 +1,10 @@
+alias: Send notification when martijn leaves work
+trigger:
+  platform: zone
+  entity_id: device_tracker.pi_martijn
+  zone: zone.her_work
+  # Event is either enter or leave
+  event: leave
+action:
+  service: ifttt.trigger
+  data: {"event":"someone_left_work", "value1":"Martijn"}

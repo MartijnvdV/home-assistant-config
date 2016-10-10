@@ -1,5 +1,4 @@
 alias: Send notification when martijn leaves home
-hide_entity: false
 trigger:
   platform: state
   entity_id: device_tracker.pi_martijn

@@ -1,9 +1,10 @@
-alias: Thermostat on when martijn arrives home
+alias: Thermostat on when jojanneke leaves work
 trigger:
-  platform: state
-  entity_id: device_tracker.pi_martijn
-  from: 'not_home'
-  to: 'home'
+    platform: zone
+    entity_id: device_tracker.pi_jojanneke
+    zone: zone.her_work
+    # Event is either enter or leave
+    event: leave
 action:
   - service: climate.set_away_mode
     entity_id: climate.living_room

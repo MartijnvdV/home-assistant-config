@@ -1,7 +1,7 @@
 Familie:
   entities:
     - device_tracker.pi_jojanneke
-    - device_tracker.pi_martijn
+    - device_tracker.iphone5s02
 
 Woonkamer:
   entities:

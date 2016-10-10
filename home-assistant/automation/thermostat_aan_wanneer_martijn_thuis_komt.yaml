@@ -1,7 +1,7 @@
 alias: Thermostat on when martijn arrives home
 trigger:
   platform: state
-  entity_id: device_tracker.pi_martijn
+  entity_id: device_tracker.iphone5s02
   from: 'not_home'
   to: 'home'
 action:

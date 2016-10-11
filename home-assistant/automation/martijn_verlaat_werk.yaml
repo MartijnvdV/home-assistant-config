@@ -2,7 +2,7 @@ alias: Send notification when martijn leaves work
 trigger:
   platform: zone
   entity_id: device_tracker.iphone5s02
-  zone: zone.her_work
+  zone: zone.his_work
   # Event is either enter or leave
   event: leave
 action:

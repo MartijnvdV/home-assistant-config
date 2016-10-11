@@ -2,7 +2,7 @@
 - name: Home
   latitude: !secret homeassistant_latitude
   longitude: !secret homeassistant_longitude
-  radius: 200
+  radius: 150
   icon: mdi:home-variant
 
 - name: his_work
@@ -17,8 +17,3 @@
   radius: 200
   icon: mdi:shopping
 
-- name: school
-  latitude: !secret school_latitude
-  longitude: !secret school_longitude
-  radius: 200
-  icon: mdi:school

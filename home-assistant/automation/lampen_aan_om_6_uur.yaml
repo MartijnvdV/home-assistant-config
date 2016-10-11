@@ -1,0 +1,9 @@
+alias: "Turn on lights at 6am"
+trigger:
+  - platform: time
+    after: "06:00:00"
+action:
+  - service: light.turn_on
+    entity_id: group.lampen_woonkamer
+    data:
+      brightness: 200

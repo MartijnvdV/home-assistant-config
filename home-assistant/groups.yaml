@@ -1,27 +1,35 @@
-Familie:
+familie:
   entities:
     - device_tracker.pi_jojanneke
     - device_tracker.iphone5s02
 
-Woonkamer:
+lampen_woonkamer:
   entities:
     - light.achterlamp
     - light.voorlamp
 
-Achtertuin:
+woonkamer:
+  entities:
+    - group.lampen_woonkamer
+
+lampen_achtertuin:
   entities:
     - light.buitenlamp
 
-Nest:
+achtertuin:
+  entities:
+    - group.lampen_achtertuin
+
+nest:
   entities:
     - climate.living_room
 
-Internetsnelheid:
+internetsnelheid:
     - sensor.speedtest_download
     - sensor.speedtest_upload
     - sensor.speedtest_ping
 
-Weather:
+weather:
   entities:
     - sensor.yr_cloudiness
     - sensor.yr_condition
@@ -48,7 +56,7 @@ default_view:
     - group.weather
     - group.familie
 
-Regels:
+regels:
   view: yes
   icon: 'mdi:information'
   entities: group.internetsnelheid

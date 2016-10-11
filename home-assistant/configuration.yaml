@@ -34,6 +34,8 @@ sun:
 
 sensor: !include_dir_list sensors
 
+wemo:
+
 # Nest thermostat
 nest:
   username: !secret nest_username

@@ -57,17 +57,8 @@ climate.living_room:
   icon: mdi:thermometer-lines
 
 # Groups
-group.lampen_woonkamer:
-  friendly_name: Lampen Woonkamer
-
-group.lampen_achtertuin:
-  friendly_name: Lampen Achtertuin
-
 group.weather:
   friendly_name: Weer
-
-group.climate_control:
-  friendly_name: Klimaat Beheersing
 
 group.family:
   friendly_name: Familie

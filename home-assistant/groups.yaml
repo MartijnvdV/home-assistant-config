@@ -3,6 +3,10 @@ family:
     - device_tracker.pi_jojanneke
     - device_tracker.iphone5s02
 
+climate_control:
+  entities:
+    - climate.living_room
+
 lampen_woonkamer:
   entities:
     - light.achterlamp
@@ -11,10 +15,6 @@ lampen_woonkamer:
 lampen_achtertuin:
   entities:
     - light.buitenlamp
-
-climate_control:
-  entities:
-    - climate.living_room
 
 internetsnelheid:
     - sensor.speedtest_download
@@ -37,14 +37,28 @@ weather:
     - sensor.yr_wind_direction
     - sensor.yr_wind_speed
 
+woonkamer:
+  entities:
+    - light.achterlamp
+    - light.voorlamp
+    - climate.living_room
+
+achtertuin:
+  entities:
+    - light.buitenlamp
+
+schuur:
+  entities:
+    - switch.accu_lader
+
 ## VIEWS ##
 default_view:
   view: yes
   icon: mdi:home
   entities:
-    - group.lampen_woonkamer
-    - group.lampen_achtertuin
-    - group.climate_control
+    - group.woonkamer
+    - group.achtertuin
+    - group.schuur
     - group.weather
     - group.family
 

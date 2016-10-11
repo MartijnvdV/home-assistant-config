@@ -8,17 +8,9 @@ lampen_woonkamer:
     - light.achterlamp
     - light.voorlamp
 
-woonkamer:
-  entities:
-    - group.lampen_woonkamer
-
 lampen_achtertuin:
   entities:
     - light.buitenlamp
-
-achtertuin:
-  entities:
-    - group.lampen_achtertuin
 
 nest:
   entities:
@@ -50,8 +42,8 @@ default_view:
   view: yes
   icon: mdi:home
   entities:
-    - group.woonkamer
-    - group.achtertuin
+    - group.lampen_woonkamer
+    - group.lampen_achtertuin
     - group.nest
     - group.weather
     - group.familie

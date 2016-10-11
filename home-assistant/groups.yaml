@@ -1,4 +1,4 @@
-familie:
+family:
   entities:
     - device_tracker.pi_jojanneke
     - device_tracker.iphone5s02
@@ -12,7 +12,7 @@ lampen_achtertuin:
   entities:
     - light.buitenlamp
 
-nest:
+climate_control:
   entities:
     - climate.living_room
 
@@ -44,9 +44,9 @@ default_view:
   entities:
     - group.lampen_woonkamer
     - group.lampen_achtertuin
-    - group.nest
+    - group.climate_control
     - group.weather
-    - group.familie
+    - group.family
 
 regels:
   view: yes

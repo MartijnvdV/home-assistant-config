@@ -53,7 +53,7 @@ sensor.speedtest_upload:
 
 # Climate
 climate.living_room:
-  friendly_name: "Woonkamer"
+  friendly_name: "Thermostaat"
   icon: mdi:thermometer-lines
 
 # Groups

@@ -3,10 +3,6 @@ family:
     - device_tracker.pi_jojanneke
     - device_tracker.iphone5s02
 
-climate_control:
-  entities:
-    - climate.living_room
-
 lampen_woonkamer:
   entities:
     - light.achterlamp

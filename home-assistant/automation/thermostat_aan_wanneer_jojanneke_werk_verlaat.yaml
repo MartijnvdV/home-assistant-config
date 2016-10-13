@@ -1,7 +1,7 @@
 alias: Thermostat on when jojanneke leaves work
 trigger:
     platform: zone
-    entity_id: device_tracker.pi_jojanneke
+    entity_id: device_tracker.iphonevanjojanneke
     zone: zone.her_work
     # Event is either enter or leave
     event: leave

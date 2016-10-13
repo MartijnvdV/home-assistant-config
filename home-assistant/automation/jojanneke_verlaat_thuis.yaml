@@ -1,7 +1,7 @@
 alias: Send notification when jojanneke leaves home
 trigger:
   platform: state
-  entity_id: device_tracker.pi_jojanneke
+  entity_id: device_tracker.iphonevanjojanneke
   from: 'home'
   to: 'not_home'
 action:

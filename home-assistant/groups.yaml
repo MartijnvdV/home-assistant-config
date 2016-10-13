@@ -1,6 +1,6 @@
 family:
   entities:
-    - device_tracker.pi_jojanneke
+    - device_tracker.iphonevanjojanneke
     - device_tracker.iphone5s02
 
 lampen_woonkamer:

@@ -1,7 +1,7 @@
 alias: Thermostat on when jojanneke arrives home
 trigger:
   platform: state
-  entity_id: device_tracker.pi_jojanneke
+  entity_id: device_tracker.iphonevanjojanneke
   from: 'not_home'
   to: 'home'
 action:

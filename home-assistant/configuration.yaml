@@ -42,13 +42,6 @@ nest:
 climate:
   platform: nest
 
-mqtt:
-  broker: 127.0.0.1
-  port: 8883
-  client_id: home-assistant
-  username: !secret mqtt_username
-  password: !secret mqtt_password
-
 device_tracker: !include device_tracker.yaml
 
 ifttt:

@@ -2,7 +2,7 @@ alias: Turn on lights at sunset
 trigger:
   platform: sun
   event: sunset
-  offset: "-00:20:00"
+  offset: "-00:05:00"
 action:
   - service: light.turn_on
     entity_id: group.lampen_woonkamer

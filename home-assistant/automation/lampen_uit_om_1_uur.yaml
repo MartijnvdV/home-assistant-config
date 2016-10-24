@@ -1,0 +1,7 @@
+alias: "Turn off lights at 1:10 am"
+trigger:
+  - platform: time
+    after: "01:10:00"
+action:
+  - service: light.turn_off
+    entity_id: group.lampen_slaapkamer

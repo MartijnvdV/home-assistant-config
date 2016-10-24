@@ -3,6 +3,11 @@ family:
     - device_tracker.iphonevanjojanneke
     - device_tracker.iphone5s02
 
+lampen_slaapkamer:
+  entities:
+    - light.hue_go_1
+    - light.hue_go_2
+
 lampen_woonkamer:
   entities:
     - light.achterlamp
@@ -39,6 +44,11 @@ woonkamer:
     - light.voorlamp
     - climate.living_room
 
+slaapkamer:
+  entities:
+    - light.hue_go_1
+    - light.hue_go_2
+
 achtertuin:
   entities:
     - light.buitenlamp
@@ -53,6 +63,7 @@ default_view:
   icon: mdi:home
   entities:
     - group.woonkamer
+    - group.slaapkamer
     - group.achtertuin
     - group.schuur
     - group.weather

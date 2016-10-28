@@ -4,4 +4,8 @@ trigger:
     after: "01:10:00"
 action:
   - service: light.turn_off
+    entity_id: group.lampen_woonkamer
+  - service: light.turn_off
+    entity_id: group.lampen_schuur
+  - service: light.turn_off
     entity_id: group.lampen_slaapkamer

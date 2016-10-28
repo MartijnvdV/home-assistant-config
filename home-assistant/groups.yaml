@@ -5,8 +5,8 @@ family:
 
 lampen_slaapkamer:
   entities:
-    - light.hue_go_1
-    - light.hue_go_2
+    - light.nachtlampje_jojan
+    - light.nachtlampje_martijn
 
 lampen_woonkamer:
   entities:
@@ -46,8 +46,8 @@ woonkamer:
 
 slaapkamer:
   entities:
-    - light.hue_go_1
-    - light.hue_go_2
+    - light.nachtlampje_jojan
+    - light.nachtlampje_martijn
 
 achtertuin:
   entities:

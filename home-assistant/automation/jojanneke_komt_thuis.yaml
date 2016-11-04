@@ -1,0 +1,9 @@
+alias: Jojanneke arrives home
+trigger:
+  platform: state
+  entity_id: device_tracker.iphonevanjojanneke
+  from: 'not_home'
+  to: 'home'
+action:
+  - service: ifttt.trigger
+    data: {"event":"someone_arrived_home", "value1":"Jojanneke"}
